@@ -6,7 +6,7 @@ import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 
 # --- 設定頁面 ---
-st.set_page_config(page_title="溫馨家庭理財", page_icon="🏠", layout="centered")
+st.set_page_config(page_title="晴朗家庭理財", page_icon="🏠", layout="centered")
 
 # --- 自定義 CSS (柔和風格) ---
 st.markdown("""
@@ -52,16 +52,16 @@ CATEGORIES = {
     },
     "支出": {
         "家庭支出": ["供樓", "管理費", "水費", "電費", "煤氣費", "電話費", "上網費", "串流平台", "差餉", "外傭薪金", "家庭日常用品"],
-        "個人支出": ["早午晚三餐", "購物", "娛樂", "個人其他"],
+        "個人支出": ["早餐", "午餐", "晚餐", "茶點", "購物", "娛樂", "其他個人支出"],
         "小朋友支出": ["學費", "興趣班", "醫療", "其他費用"],
-        "交通費用": ["車費", "車充電費用", "泊車", "交通其他"],
+        "交通費用": ["車費", "車充電費用", "泊車", "其他交通"],
         "儲蓄與保險": ["存款", "保險", "旅遊基金"]
     }
 }
 
 # --- 主程式 ---
 def main():
-    st.title("🏠 溫馨家庭理財簿 (雲端版)")
+    st.title("🏠 晴朗家庭理財")
     
     # 初始化連接
     try:
